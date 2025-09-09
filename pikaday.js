@@ -552,6 +552,11 @@
         {
             e = e || window.event;
 
+            if (e?.target?.className === "ignore-pikaday-selection") {
+                return;
+            }
+
+
             if (self.isVisible()) {
                 switch(e.keyCode){
                     case 13:
