@@ -1,6 +1,6 @@
 {
   "name": "@proreact/wcag-pikaday",
-  "version": "1.9.3",
+  "version": "1.10.0",
   "description": "A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS. Now WCAG AAA compliant.",
   "keywords": [
     "datepicker",
