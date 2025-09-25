@@ -552,7 +552,7 @@
         {
             e = e || window.event;
 
-            if (e?.target?.className === "ignore-pikaday-selection") {
+            if ((e?.target?.className || "").includes("ignore-pikaday-selection")) {
                 return;
             }
 
