@@ -552,10 +552,15 @@
         {
             e = e || window.event;
 
-            if ((e?.target?.className || "").includes("ignore-pikaday-selection")) {
-                return;
+            if (
+                e?.target?.tagName === "TEXTAREA" ||
+                (
+                    e?.target?.tagName === "INPUT" &&
+                    ["text", "number", "password", "email", "url", "search"].includes(e.target.type)
+                )
+            ) {
+                return; // ignore
             }
-
 
             if (self.isVisible()) {
                 switch(e.keyCode){
